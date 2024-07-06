@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+*,
+*::before,
+*::after{
+  padding:0;
+  margin:0;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+#parent-container h1{
+  padding:2rem;
+ text-align: center;
+ font-size:2.6rem;
+}
+
+.container {
+  text-align: center;
+}
+
+.imen,
+.iwomen,
+.ikid {
+  height: 1.5vw;
+  width: 1.5vw;
+  margin-right: 0.75vw;
+}
+
+.tabs{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.tabs button {
+  font-size: 1.5vw;
+  padding: 10px;
+  background-color: black;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  flex: 1;
+  margin: 0 1vw;
+}
+
+#product-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.product-card {
+  padding: 6px;
+  width: calc(25% - 20px);
+  margin: 10px;
+  height: 580px;
+  box-sizing: border-box;
+}
+.product-image {
+  width: 100%;
+  height: 60%;
+  border-radius: 10px;
+}
+
+.badge {
+  background-color:rgb(255, 255, 255);
+  color: #000000;
+  margin: 5px;
+  padding: 8px;
+  border-radius: 3px;
+  position: absolute;
+
+}
+.button{
+  width: 100%;
+  background-color: black;
+  border: none;
+  height: 33px;
+  color: white;
+  border-radius: 5px;
+} 
+
+.product-card h3 {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 11ch; 
+  margin-bottom: 5px;
+} 
+
+.product-card p.vendor {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: calc(100% - 10px);
+  margin-bottom: 5px;
+}
+
+@media screen and (max-width: 767px) {
+ 
+  .tabs button {
+      font-size: 3.75vw;
+      width: 100%;
+      margin: 5px 0;
+  }
+
+  .product-card {
+      width: calc(100% - 20px);
+  }
+
+  .badge{
+    margin-left:1rem;
+  }
+
+  button{
+    margin-top:1rem;
+  }
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .tabs button {
+      width: 100%;
+      margin: 5px 0;
+  }
+
+  .product-card {
+      width: calc(50% - 20px);
+  }
+}
+
+
+
+
